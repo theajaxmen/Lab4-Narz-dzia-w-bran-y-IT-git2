@@ -9,6 +9,11 @@ elif [ "$1" == "--logs" ]; then
     fi
     for i in $(seq 1 $count); do
         filename="log${i}.txt"
-        echo "Filename: $filename, Script: $0, Date: $(date)" > $filename
+        echo "Nzwa pliku: $filename, Skrypt: $0, Data: $(date)" > $filename
     done
+elif [ "$1" == "--help" ]; then
+    echo "Opcje: "
+    echo "--date        Pokazuje date"
+    echo "--logs [num]  Tworzy logi"
+    echo "--help        Pokazuje te okno"
 fi
