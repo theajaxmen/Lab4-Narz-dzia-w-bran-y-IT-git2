@@ -16,4 +16,8 @@ elif [ "$1" == "--help" ]; then
     echo "--date        Pokazuje date"
     echo "--logs [num]  Tworzy logi"
     echo "--help        Pokazuje te okno"
+elif [ "$1" == "--init" ]; then
+    git clone $REPO_URL
+    echo "export PATH=\$PATH:$(pwd)//Lab4-Narz-dzia-w-bran-y-IT-git2" >> ~/.bashrc
+    source ~/.bashrc
 fi
