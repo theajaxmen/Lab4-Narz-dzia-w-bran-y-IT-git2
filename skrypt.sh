@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ "$1" == "--date" ]; then
+if [ "$1" == "--date" ] || [ "$1" == "-d" ]; then
     date
-elif [ "$1" == "--logs" ]; then
+elif [ "$1" == "--logs" ] || [ "$1" == "-l" ]; then
     count=100
     if [ ! -z "$2" ]; then
         count=$2
